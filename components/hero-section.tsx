@@ -1,16 +1,16 @@
 import React from 'react';
-import HeroHeader from '@/components/header';
+// import HeroHeader from '@/components/header';
 import { ProductIllustration } from '@/components/ui/illustrations/product-illustration';
 
 export default function HeroSection() {
   return (
     <>
-      <HeroHeader />
+      {/* <HeroHeader /> */}
       <main role='main' className='bg-background overflow-hidden'>
         <section className='relative py-32 md:py-44 lg:py-52'>
           <div className='relative z-30 mx-auto max-w-5xl px-6 text-center'>
             <h1 className='mx-auto max-w-3xl text-balance text-4xl font-semibold sm:text-5xl'>
-              Write. Refine. Publish.
+              The easiest way to build web apps
             </h1>
 
             <p className='text-muted-foreground mx-auto mb-7 mt-3 max-w-xl text-balance text-xl'>
