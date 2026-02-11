@@ -17,7 +17,7 @@ export default function HeroSection() {
       <main role='main' className='bg-background overflow-hidden'>
         <section className='relative py-32 md:py-44 lg:py-52'>
           {/* Background pattern */}
-          <div
+          {/* <div
             aria-hidden
             className='pointer-events-none absolute inset-0 z-0'
             style={{
@@ -28,7 +28,7 @@ export default function HeroSection() {
                 repeating-linear-gradient(157.5deg, transparent, transparent 1px, rgba(31, 41, 55, 0.03) 1px, rgba(31, 41, 55, 0.03) 2px, transparent 2px, transparent 4px)
               `,
             }}
-          />
+          /> */}
           <div className='relative z-10 mx-auto max-w-5xl px-6 text-center'>
             <h1 className='mx-auto max-w-3xl text-balance text-4xl font-semibold sm:text-5xl heading-serif'>
               The easiest way <br /> to build web apps.

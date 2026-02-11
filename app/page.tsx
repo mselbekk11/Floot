@@ -1,6 +1,7 @@
 import BentoFour from '@/components/bento-4';
 import CallToAction from '@/components/call-to-action';
 import Discover from '@/components/discover';
+import FeaturesSectionTen from '@/components/features-10';
 // import DiscoverTwo from '@/components/discover-two';
 import FeaturesSectionNine from '@/components/features-9';
 import FooterSection from '@/components/footer';
@@ -17,7 +18,8 @@ export default function Page() {
       <HeroSection />
       <Discover />
       {/* <DiscoverTwo /> */}
-      <FeaturesSectionNine />
+      {/* <FeaturesSectionNine /> */}
+      <FeaturesSectionTen />
       <BentoFour />
       <CallToAction />
       <FooterSection />

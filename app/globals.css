@@ -59,7 +59,6 @@
     0px 4px 8px -1px hsl(0 0% 0% / 0.1), 0px 8px 10px -2px hsl(0 0% 0% / 0.1);
   --shadow-2xl: 0px 4px 8px -1px hsl(0 0% 0% / 0.25);
   --tracking-normal: 0em;
-  --spacing: 0.25rem;
 }
 
 .dark {
@@ -120,7 +119,7 @@
   --shadow-2xl: 0px 4px 8px -1px hsl(0 0% 0% / 0.25);
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -157,6 +156,7 @@
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
   --font-serif: var(--font-serif);
+  --font-paytone: var(--font-paytone);
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -186,6 +186,9 @@ h3 {
     font-family: var(--font-source-serif), Georgia, serif;
     font-weight: 600;
     letter-spacing: -0.02em;
+  }
+  .font-paytone {
+    font-family: var(--font-paytone), sans-serif;
   }
 }
 

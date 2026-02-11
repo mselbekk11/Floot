@@ -22,7 +22,7 @@ export default function BentoFour() {
               </div>
               <div>
                 <h3 className='text-foreground font-semibold'>
-                  Smart Lighting Control
+                  Accept Payments
                 </h3>
                 <p className='text-muted-foreground mt-3'>
                   Automate your home lighting with customizable schedules.
@@ -33,7 +33,7 @@ export default function BentoFour() {
               <KeysIllustration />
               <div>
                 <h3 className='text-foreground font-semibold'>
-                  Smart Lighting Control
+                  User Management & Authentication
                 </h3>
                 <p className='text-muted-foreground mt-3'>
                   Automate your home lighting with customizable schedules.
@@ -47,7 +47,7 @@ export default function BentoFour() {
               </div>
               <div>
                 <h3 className='text-foreground font-semibold'>
-                  Collaborative Analysis
+                  Backend & Database
                 </h3>
                 <p className='text-muted-foreground mt-3'>
                   Add comments, share insights, and work together with your
@@ -88,7 +88,7 @@ export default function BentoFour() {
               </div>
               <div>
                 <h3 className='text-foreground font-semibold'>
-                  Interactive Dashboards
+                  1 click Hosting
                 </h3>
                 <p className='text-muted-foreground mt-3'>
                   Create custom dashboards with drag-and-drop simplicity.
@@ -106,7 +106,7 @@ export default function BentoFour() {
                 </div>
                 <div>
                   <h3 className='text-foreground font-semibold'>
-                    Smart Lighting Control
+                    Monitoring
                   </h3>
                   <p className='text-muted-foreground mt-3'>
                     Automate your home lighting with customizable schedules.
