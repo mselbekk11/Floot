@@ -46,7 +46,7 @@ export default function FooterSection() {
     return (
         <footer
             role="contentinfo"
-            className="bg-background py-8 sm:py-20">
+            className="bg-background py-8 sm:py-20 dark">
             <div className="mx-auto max-w-7xl space-y-16 px-6">
                 <div className="grid gap-12 md:grid-cols-5">
                     <div className="space-y-6 md:col-span-2 md:space-y-12">

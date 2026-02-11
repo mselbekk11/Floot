@@ -21,9 +21,6 @@ export default function Page() {
       <BentoFour />
       <CallToAction />
       <FooterSection />
-      <div className='h-[1000px] w-full'>
-        hello
-      </div>
 
       {/* <FeaturesSectionA />
       <FeaturesSectionB />
