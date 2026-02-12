@@ -7,6 +7,7 @@ import Image from 'next/image';
 export default function FeaturesSectionEleven() {
   return (
     <section className='py-24 z-50 relative'>
+      <h2 className='max-w-5xl mx-auto text-white mb-6'>Everything you need</h2>
       <div className='mx-auto w-full max-w-5xl px-6 xl:px-0 bg-[#17171A] rounded-md'>
         <div className='relative'>
           <PlusDecorator className='-translate-[calc(50%-0.5px)]' />

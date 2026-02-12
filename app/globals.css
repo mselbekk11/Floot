@@ -185,6 +185,13 @@ p {
   font-family: var(--font-bricolage-grotesque), sans-serif;
 }
 
+h2 {
+  font-family: var(--font-source-serif), Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-size: 1.8rem;
+}
+
 @layer components {
   .heading-serif {
     font-family: var(--font-source-serif), Georgia, serif;

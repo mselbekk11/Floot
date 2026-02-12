@@ -4,6 +4,7 @@ import { Card } from '@/components/ui/card';
 import { LogoIcon } from '@/components/logo';
 import { Shield, HardDrive, Globe, Database, Zap, Lock } from 'lucide-react';
 import Image from 'next/image';
+import CTA from './cta';
 
 const features = [
   {
@@ -55,6 +56,7 @@ export default function CallToAction() {
             className='pointer-events-none absolute z-50 w-full top-0 left-0'
           />
       <div className='mx-auto max-w-5xl'>
+      <h2 className='max-w-5xl mx-auto text-zinc-800 mb-14'>Everything you need</h2>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12'>
           {features.map((feature) => (
             <div key={feature.title} className='flex gap-4'>
@@ -74,26 +76,7 @@ export default function CallToAction() {
         </div>
       </div>
       <div className='mx-auto w-full max-w-5xl'>
-        <Card className='relative overflow-hidden p-8 shadow-lg md:px-32 md:py-20'>
-          <LogoIcon
-            uniColor
-            aria-hidden
-            className='text-foreground/10 pointer-events-none absolute inset-0 size-full translate-y-3/4'
-          />
-          <div className='relative text-center'>
-            <h2 className='text-foreground text-balance text-3xl font-semibold md:text-4xl'>
-              Create, Sell and Grow
-            </h2>
-            <p className='text-muted-foreground mb-6 mt-4 text-balance'>
-              Join a community of over 1000+ companies and developers who have
-              already discovered the power of Tailark.{' '}
-            </p>
-
-            <Button asChild>
-              <Link href='#'>Contact Sales</Link>
-            </Button>
-          </div>
-        </Card>
+        <CTA />
       </div>
     </section>
   );

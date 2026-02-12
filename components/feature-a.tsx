@@ -10,18 +10,20 @@ export default function FeatureA() {
 
       <div className='relative max-w-5xl mx-auto py-24 xl:py-24 px-4 sm:px-6 lg:px-8 grid gap-20 items-center'>
         <div className='lg:grid grid-cols-2 gap-x-8 xl:gap-x-16 items-start'>
-          <div className='relative lg:max-w-xl space-y-4 lg:pb-20'>
-            <h2 className='text-2xl md:text-3xl lg:text-4xl text-zinc-800'>
-              Just Chat to Build
-            </h2>
-            <p className='font-bricolage-grotesque font-regular text-lg text-gray-500'>
-              For builders who need compute that keeps up with their ideas, Fly
-              Machines are hardware-virtualized containers that launch instantly
-              and run only when you need them. Deploy an app in minutes or run
-              untrusted code in isolated sandboxes.
-            </p>
-            {/* Decorative bottom line */}
-            <div className='hidden lg:block w-full h-px absolute bottom-0 bg-gradient-to-r from-purple-400 via-purple-400/35 via-10% to-transparent' />
+          <div className='flex flex-col gap-8 relative'>
+            <div className='flex flex-col gap-2 relative'>
+              <h2 className=' text-zinc-800'>Just Chat to Build</h2>
+              <p className='font-bricolage-grotesque font-regular text-lg text-gray-500'>
+                For builders who need compute that keeps up with their ideas,
+                Fly Machines are hardware-virtualized containers that launch
+                instantly and run only when you need them. Deploy an app in
+                minutes or run untrusted code in isolated sandboxes.
+              </p>
+            </div>
+            <div>
+              {/* Decorative bottom line */}
+              <div className='hidden lg:block w-full h-px bottom-0 bg-gradient-to-r from-[#1A1A1A] via-[#232325] via-10% to-transparent ' />
+            </div>
           </div>
           <Image
             src='/bird.png'

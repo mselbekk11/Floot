@@ -44,13 +44,13 @@ const projects = [
 export default function Discover() {
   return (
     <div className='bg-[#232325] texture-four py-30'>
+      <div className='mx-auto max-w-7xl relative z-50'>
+        <h2 className='text-white mb-8'>Discover apps</h2>
+        {/* <p className='text-gray-400 text-sm'>Explore what others are building</p> */}
+      </div>
       <div className='relative z-50 max-w-7xl mx-auto bg-[#17171A] p-8 border border-[#66666F] rounded-md'>
         <div className='max-w-7xl mx-auto  relative z-10 flex flex-col gap-8'>
           <div className='flex justify-between items-center'>
-            <div>
-              <h2 className='text-white text-2xl font-bold'>Discover apps</h2>
-              {/* <p className='text-gray-400 text-sm'>Explore what others are building</p> */}
-            </div>
             <Link
               href='/'
               className='text-white text-sm hover:underline flex items-center gap-1'
