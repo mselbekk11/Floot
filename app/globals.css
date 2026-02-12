@@ -181,6 +181,10 @@ h3 {
   letter-spacing: -0.02em;
 }
 
+p {
+  font-family: var(--font-bricolage-grotesque), sans-serif;
+}
+
 @layer components {
   .heading-serif {
     font-family: var(--font-source-serif), Georgia, serif;
@@ -189,6 +193,9 @@ h3 {
   }
   .font-paytone {
     font-family: var(--font-paytone), sans-serif;
+  }
+  .font-bricolage-grotesque {
+    font-family: var(--font-bricolage-grotesque), sans-serif;
   }
 }
 

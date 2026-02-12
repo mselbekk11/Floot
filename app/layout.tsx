@@ -1,5 +1,10 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono, Source_Serif_4 } from 'next/font/google';
+import {
+  Geist,
+  Geist_Mono,
+  Source_Serif_4,
+  Bricolage_Grotesque,
+} from 'next/font/google';
 import localFont from 'next/font/local';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
@@ -11,6 +16,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
+  subsets: ['latin'],
+});
+
+const bricolageGrotesque = Bricolage_Grotesque({
+  variable: '--font-bricolage-grotesque',
   subsets: ['latin'],
 });
 
@@ -38,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${sourceSerif.variable} ${paytoneOne.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${bricolageGrotesque.variable} ${sourceSerif.variable} ${paytoneOne.variable} antialiased`}
       >
         <ThemeProvider>{children}</ThemeProvider>
       </body>

@@ -8,10 +8,16 @@ export default function ChatboxTwo() {
         <input
           type='text'
           placeholder='Describe a company in a sentence or two...'
-          className='flex-1 bg-transparent border-none outline-none text-gray-700 placeholder:text-gray-400'
+          className='flex-1 bg-transparent border-none outline-none text-gray-700 placeholder:text-gray-400 font-bricolage-grotesque font-light'
         />
-        <Button variant='pinky' size='lg'>
+        {/* <Button variant='pinky' size='lg'>
           <Sparkles className='size-4' />
+          Generate
+        </Button> */}
+        {/* <Button variant='floot' size='lg'>
+          Generate
+        </Button> */}
+        <Button variant='floottwo' size='lg'>
           Generate
         </Button>
       </div>

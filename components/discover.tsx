@@ -44,7 +44,7 @@ const projects = [
 export default function Discover() {
   return (
     <div className='bg-[#1A1A1A] texture-four pt-30 pb-20'>
-      <div className='relative z-50 max-w-7xl mx-auto bg-[#1A1A1A] p-8 border-2 border-[#383837]'>
+      <div className='relative z-50 max-w-7xl mx-auto bg-[#131313] p-8 border-2 border-[#383837]'>
         <div className='max-w-7xl mx-auto  relative z-10 flex flex-col gap-8'>
           <div className='flex justify-between items-center'>
             <div>

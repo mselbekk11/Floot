@@ -30,27 +30,33 @@ export default function NavTwo() {
     },
   ];
   return (
-    <div className='w-full bg-black flex justify-between items-center h-[60px]'>
-      <div className='text-white h-full flex items-center px-6 gap-2'>
-        <div><Image src="/logo.svg" alt="Floot" width={40} height={40} /></div>
-        <div className='text-white text-2xl font-bold'>Floot</div>
-      </div>
-      <div className='h-full flex items-center'>
-        <div className='flex items-center'>
+    <div className='w-full bg-[#111111] texture-four'>
+      <div className='w-full flex items-center h-[50px] z-50 relative px-6'>
+        {/* Logo - left */}
+        <div className='w-[200px] text-white flex items-center gap-2'>
+          <Image src='/logo.svg' alt='Floot' width={30} height={30} />
+          <div className='text-white text-xl font-semibold heading-serif'>floot</div>
+        </div>
+
+        {/* Nav links - center */}
+        <div className='flex-1 flex justify-center items-center gap-6'>
           {links.map((link) => (
-            <div
-              key={link.index}
-              className='text-white h-full flex items-center px-6'
-            >
+            <div key={link.index} className='text-white text-md font-bricolage-grotesque font-light'>
               {link.label}
             </div>
           ))}
         </div>
-        <div className='bg-zinc-800 text-white h-full flex items-center px-6'>
-          Login
-        </div>
-        <div className='bg-[#FF85E5] h-full flex items-center px-6'>
-          Start Building
+
+        {/* Buttons - right */}
+        <div className='w-[200px] flex items-center justify-end gap-2'>
+          {/* <div className='bg-zinc-800 text-white text-sm px-4 py-1.5 rounded-sm'>
+            Login
+          </div> */}
+          <Button variant='grey'>Login</Button>
+          {/* <div className='bg-[#FF85E5] text-sm px-4 py-1.5 rounded-sm'>
+            Start Building
+          </div> */}
+          <Button variant='floottwo'>Start Building</Button>
         </div>
       </div>
     </div>

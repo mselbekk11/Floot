@@ -7,6 +7,7 @@ import FeaturesSectionNine from '@/components/features-9';
 import FooterSection from '@/components/footer';
 import HeroSection from '@/components/hero-section';
 import NavTwo from '@/components/nav-two';
+import Image from 'next/image';
 // import FeaturesSectionA from '@/components/features-1-a';
 // import FeaturesSectionB from '@/components/features-1-b';
 // import FeaturesSectionC from '@/components/features-1-c';

@@ -10,6 +10,7 @@ import {
 } from './prompt-input';
 import Chatbox from './chatbox';
 import ChatboxTwo from './chatbox-two';
+import Image from 'next/image';
 
 export default function HeroSection() {
   return (
@@ -17,6 +18,15 @@ export default function HeroSection() {
       {/* <HeroHeader /> */}
       <main role='main' className='bg-[#F0EDFF] overflow-hidden'>
         <section className='relative py-32 md:py-44 lg:py-62'>
+          {/* Hue gradient blob */}
+          <Image
+            src='/hue.svg'
+            width={1655}
+            height={341}
+            alt=''
+            className='pointer-events-none absolute z-50 w-full top-0 left-0'
+          />
+
           {/* Background pattern */}
           {/* <div
             aria-hidden
@@ -31,13 +41,21 @@ export default function HeroSection() {
             }}
           /> */}
           <div className='relative z-10 mx-auto max-w-5xl px-6 text-center'>
-            <h1 className='mx-auto max-w-3xl text-balance text-4xl font-semibold sm:text-5xl heading-serif'>
-              Build powerful apps fast. <br /> No code needed.
+            <h1 className='mx-auto max-w-3xl text-balance text-4xl font-semibold sm:text-5xl heading-serif z-20 relative'>
+              Build powerful apps fast. <br /> without writing code.
             </h1>
 
-            <p className='text-muted-foreground mx-auto mb-7 mt-4 max-w-xl text-balance text-lg'>
+            <p className='text-muted-foreground mx-auto mb-7 mt-4 max-w-xl text-balance text-lg font-bricolage-grotesque font-light'>
               Create apps and websites by chatting with AI
             </p>
+
+            <Image
+              src='/stripe.svg'
+              width={300}
+              height={50}
+              alt=''
+              className='pointer-events-none absolute z-0 top-23 left-115'
+            />
 
             {/* <ProductIllustration /> */}
 
