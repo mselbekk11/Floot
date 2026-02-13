@@ -5,7 +5,7 @@ import Link from 'next/link';
 const projects = [
   {
     id: 1,
-    image: '/fire-1.png',
+    image: '/app-4.png',
     logo: '/trizzy.png',
     title: 'Iconstack',
     description: '50,000+ Free SVG Icons',
@@ -14,7 +14,7 @@ const projects = [
   },
   {
     id: 2,
-    image: '/fire-2.png',
+    image: '/app-5.png',
     logo: '/trizzy.png',
     title: 'ExamAi',
     description: 'Create, grade, and analyze your e...',
@@ -23,7 +23,7 @@ const projects = [
   },
   {
     id: 3,
-    image: '/fire-1.png',
+    image: '/app-1.png',
     logo: '/trizzy.png',
     title: 'Attendflow',
     description: 'Event marketing made simple',
@@ -32,7 +32,7 @@ const projects = [
   },
   {
     id: 4,
-    image: '/fire-2.png',
+    image: '/trizzy.png',
     logo: '/trizzy.png',
     title: 'creativable',
     description: 'All-in-one CRM, AI Assistant, tea...',
@@ -41,7 +41,7 @@ const projects = [
   },
   {
     id: 5,
-    image: '/fire-1.png',
+    image: '/app-1.png',
     logo: '/trizzy.png',
     title: 'Iconstack',
     description: '50,000+ Free SVG Icons',
@@ -50,7 +50,7 @@ const projects = [
   },
   {
     id: 6,
-    image: '/fire-2.png',
+    image: '/trizzy.png',
     logo: '/trizzy.png',
     title: 'ExamAi',
     description: 'Create, grade, and analyze your e...',
@@ -59,7 +59,7 @@ const projects = [
   },
   {
     id: 7,
-    image: '/fire-1.png',
+    image: '/app-5.png',
     logo: '/trizzy.png',
     title: 'Attendflow',
     description: 'Event marketing made simple',
@@ -68,7 +68,7 @@ const projects = [
   },
   {
     id: 8,
-    image: '/fire-2.png',
+    image: '/app-4.png',
     logo: '/trizzy.png',
     title: 'creativable',
     description: 'All-in-one CRM, AI Assistant, tea...',
@@ -112,12 +112,13 @@ export default function Discover() {
                 className='group flex flex-col gap-4'
               >
                 {/* Image */}
-                <div className='relative h-48 w-full overflow-hidden rounded-md'>
+                <div className='relative w-full rounded-md p-2 bg-zinc-800'>
                   <Image
                     src={project.image}
                     alt={project.title}
-                    fill
-                    className='object-cover'
+                    width={300}
+                    height={300}
+                    className=''
                   />
                 </div>
 

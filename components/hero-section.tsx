@@ -89,6 +89,22 @@ export default function HeroSection() {
               </div>
               {/* <Chatbox /> */}
               {/* <ChatboxTwo /> */}
+              <div className='flex justify-center items-center gap-4 mt-6'>
+                <Image
+                  src='/y-combinator.svg'
+                  width={120}
+                  height={100}
+                  alt=''
+                  className='pointer-events-none'
+                />
+                <Image
+                  src='/product-hunt.svg'
+                  width={150}
+                  height={100}
+                  alt=''
+                  className='pointer-events-none'
+                />
+              </div>
             </div>
           </div>
         </section>

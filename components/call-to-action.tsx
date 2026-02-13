@@ -6,40 +6,46 @@ import { Shield, HardDrive, Globe, Database, Zap, Lock } from 'lucide-react';
 import Image from 'next/image';
 import CTA from './cta';
 import CTATwo from './cta-two';
+import AutoScale from '@/public/autoscaling.svg'
+import Backups from '@/public/backups.svg'
+import Domains from '@/public/domains.svg'
+import FastLoading from '@/public/fast-loading.svg'
+import Secure from '@/public/secure.svg'
+import Support from '@/public/support.svg'
 
 const features = [
   {
-    icon: Shield,
+    icon: AutoScale,
     title: 'AutoScaling',
     description:
       'No complex configurations or IAM policies. Your apps communicate securely on private networks with zero configuration.',
   },
   {
-    icon: HardDrive,
+    icon: Backups,
     title: 'Automatic Backups',
     description:
       'Volumes are encrypted with keys stored in redundant industry-proven secret storage systems. Automatic encryption with zero effort.',
   },
   {
-    icon: Globe,
+    icon: FastLoading,
     title: 'Fast Loading WorldWide',
     description:
       'S3-compatible object storage with automatic global reach. It intelligently routes data to fit read patterns, minimizing latency.',
   },
   {
-    icon: Database,
+    icon: Secure,
     title: 'Secure Connections',
     description:
       'A full menu of managed services running on our infrastructure right next to your app, keeping latency low and you productive.',
   },
   {
-    icon: Zap,
+    icon: Domains,
     title: 'Use your own domains',
     description:
       'Deploy your applications in seconds with zero-downtime releases. Scale up or down automatically based on demand.',
   },
   {
-    icon: Lock,
+    icon: Support,
     title: 'Live Support',
     description:
       'Secure user authentication out of the box with support for OAuth, SSO, and custom providers. No third-party services needed.',
@@ -55,13 +61,14 @@ export default function CallToAction() {
       <div className='absolute inset-0 bg-gradient-to-r from-purple-300/10 via-indigo-300/10 to-pink-300/10 [mask-image:linear-gradient(to_bottom,rgba(255,255,255,1)_75%,rgba(255,255,255,0))]' />
       <div className='mx-auto max-w-5xl'>
         <h2 className='max-w-5xl mx-auto text-zinc-800 mb-14'>
-          Everything you need
+          And much more...
         </h2>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12'>
           {features.map((feature) => (
             <div key={feature.title} className='flex gap-4'>
-              <div className='shrink-0 flex items-center justify-center size-12 rounded-lg bg-black/10'>
-                <feature.icon className='size-5 text-black/80' />
+              <div className='shrink-0 flex items-center justify-center size-12 rounded-lg bg-purple-800/10'>
+                {/* <feature.icon className='size-5 text-black/80' /> */}
+                <Image src={feature.icon} alt={feature.title} width={25} height={20} />
               </div>
               <div>
                 <h3 className='text-black font-semibold text-lg'>

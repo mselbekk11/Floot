@@ -13,7 +13,7 @@ export default function FeatureA() {
           <div className='flex flex-col gap-8 relative'>
             <div className='flex flex-col gap-2 relative'>
                 <h2 className='text-zinc-800 z-80'>Just Chat to Build</h2>
-              <p className='font-bricolage-grotesque font-regular text-lg text-gray-500'>
+              <p className='font-bricolage-grotesque font-regular text-md text-gray-500'>
                 For builders who need compute that keeps up with their ideas,
                 Fly Machines are hardware-virtualized containers that launch
                 instantly and run only when you need them. Deploy an app in
@@ -33,10 +33,10 @@ export default function FeatureA() {
             </div>
           </div>
           <Image
-            src='/bird.png'
-            className='w-full max-w-sm -mb-12 mx-auto relative lg:-mt-4'
+            src='/chat.png'
+            className='w-full -mb-12 mx-auto relative lg:-mt-4'
             alt='Feature A'
-            width={400}
+            width={500}
             height={500}
           />
         </div>
