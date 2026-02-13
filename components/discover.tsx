@@ -5,7 +5,7 @@ import Link from 'next/link';
 const projects = [
   {
     id: 1,
-    image: '/app-4.png',
+    image: '/fire-1.png',
     logo: '/trizzy.png',
     title: 'Iconstack',
     description: '50,000+ Free SVG Icons',
@@ -14,7 +14,7 @@ const projects = [
   },
   {
     id: 2,
-    image: '/app-1.png',
+    image: '/fire-2.png',
     logo: '/trizzy.png',
     title: 'ExamAi',
     description: 'Create, grade, and analyze your e...',
@@ -23,7 +23,7 @@ const projects = [
   },
   {
     id: 3,
-    image: '/app-5.png',
+    image: '/fire-1.png',
     logo: '/trizzy.png',
     title: 'Attendflow',
     description: 'Event marketing made simple',
@@ -32,7 +32,43 @@ const projects = [
   },
   {
     id: 4,
-    image: '/app-3.png',
+    image: '/fire-2.png',
+    logo: '/trizzy.png',
+    title: 'creativable',
+    description: 'All-in-one CRM, AI Assistant, tea...',
+    likes: 383,
+    link: '/',
+  },
+  {
+    id: 5,
+    image: '/fire-1.png',
+    logo: '/trizzy.png',
+    title: 'Iconstack',
+    description: '50,000+ Free SVG Icons',
+    likes: 749,
+    link: '/',
+  },
+  {
+    id: 6,
+    image: '/fire-2.png',
+    logo: '/trizzy.png',
+    title: 'ExamAi',
+    description: 'Create, grade, and analyze your e...',
+    likes: 644,
+    link: '/',
+  },
+  {
+    id: 7,
+    image: '/fire-1.png',
+    logo: '/trizzy.png',
+    title: 'Attendflow',
+    description: 'Event marketing made simple',
+    likes: 613,
+    link: '/',
+  },
+  {
+    id: 8,
+    image: '/fire-2.png',
     logo: '/trizzy.png',
     title: 'creativable',
     description: 'All-in-one CRM, AI Assistant, tea...',
@@ -44,23 +80,30 @@ const projects = [
 export default function Discover() {
   return (
     <div className='bg-[#232325] texture-four py-30'>
-      <div className='absolute inset-0 z-0' style={{ backgroundImage: 'url(/stars.png)', backgroundRepeat: 'repeat', backgroundSize: '500px', opacity: 0.6 }}></div>
-      <div className='mx-auto max-w-7xl relative z-50'>
+      <div
+        className='absolute inset-0 z-0'
+        style={{
+          backgroundImage: 'url(/stars.png)',
+          backgroundRepeat: 'repeat',
+          backgroundSize: '500px',
+          opacity: 0.6,
+        }}
+      ></div>
+      {/* <div className='mx-auto max-w-7xl relative z-50'>
         <h2 className='text-white mb-8'>Discover apps</h2>
-        {/* <p className='text-gray-400 text-sm'>Explore what others are building</p> */}
+      </div> */}
+      <div className='mx-auto max-w-7xl relative z-50 flex justify-between items-center'>
+        <h2 className='text-white mb-6 z-80'>Discover apps</h2>
+        <Link
+          href='/'
+          className='text-white text-sm hover:underline flex items-center gap-1'
+        >
+          View all
+          <ArrowRight className='size-4' />
+        </Link>
       </div>
       <div className='relative z-50 max-w-7xl mx-auto bg-[#17171A] p-8 border border-[#66666F] rounded-md'>
         <div className='max-w-7xl mx-auto  relative z-10 flex flex-col gap-8'>
-          <div className='flex justify-between items-center'>
-            <Link
-              href='/'
-              className='text-white text-sm hover:underline flex items-center gap-1'
-            >
-              View all
-              <ArrowRight className='size-4' />
-            </Link>
-          </div>
-
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
             {projects.map((project) => (
               <a
@@ -69,7 +112,7 @@ export default function Discover() {
                 className='group flex flex-col gap-4'
               >
                 {/* Image */}
-                <div className='relative h-48 w-full overflow-hidden rounded-xl'>
+                <div className='relative h-48 w-full overflow-hidden rounded-md'>
                   <Image
                     src={project.image}
                     alt={project.title}
@@ -85,7 +128,7 @@ export default function Discover() {
                     <p className='text-white text-sm font-medium truncate'>
                       {project.title}
                     </p>
-                    <Heart className='size-4 text-gray-400 shrink-0' />
+                    <Heart className='size-4 text-purple-600 fill-purple-600 shrink-0' />
                   </div>
                   {/* Row 2: Description + Number */}
                   <div className='flex items-center justify-between'>

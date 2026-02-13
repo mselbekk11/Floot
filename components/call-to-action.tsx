@@ -47,7 +47,7 @@ const features = [
 
 export default function CallToAction() {
   return (
-    <section className='bg-[#F0EDFF] relative py-12 md:py-24 flex flex-col gap-24'>
+    <section className='bg-[#ffffff] relative py-12 md:py-24 flex flex-col gap-24'>
       <Image
             src='/hue.svg'
             width={1655}

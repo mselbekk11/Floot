@@ -23,7 +23,14 @@ export default function FeatureB() {
           </div>
           <div>
             {/* Decorative bottom line */}
-            <div className='hidden lg:block w-full h-px bottom-0 bg-gradient-to-r from-[#1A1A1A] via-[#232325] via-10% to-transparent ' />
+            {/* <div className='hidden lg:block w-full h-px bottom-0 bg-gradient-to-r from-[#1A1A1A] via-[#232325] via-10% to-transparent ' /> */}
+            <Image
+              src='/stripe.svg'
+              width={150}
+              height={50}
+              alt=''
+              className='pointer-events-none '
+            />
           </div>
         </div>
       </div>

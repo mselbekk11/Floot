@@ -61,7 +61,7 @@ export default function HeroSection() {
             {/* <ProductIllustration /> */}
 
             <div className='max-w-[800px] mx-auto'>
-              <div className='px-[3px] py-[3px] rounded-md bg-linear-to-r from-[#9B17F7] via-[#D13AC0] to-[#DE3AB4] shadow-sm shadow-black/20 transition-shadow duration-300 hover:shadow-[80_17px_55px_-1px_rgba(0,0,0,0.1)] has-focus:shadow-[0_27px_55px_-14px_rgba(0,0,0,0.27)]'>
+              <div className='px-[3px] py-[3px] rounded-md bg-linear-to-r from-[#9B17F7] via-[#D13AC0] to-[#DE3AB4] shadow-md hover:shadow-2xl transition duration-300'>
                 <PromptInput>
                   <PromptInputTextarea className='min-h-[100px]' />
                   <PromptInputToolbar>
