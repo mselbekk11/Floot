@@ -173,6 +173,17 @@
   --shadow-2xl: var(--shadow-2xl);
 }
 
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@layer utilities {
+  .animate-blink {
+    animation: blink 0.8s step-end infinite;
+  }
+}
+
 @layer components {
   .heading-serif {
     font-family: var(--font-source-serif), Georgia, serif;

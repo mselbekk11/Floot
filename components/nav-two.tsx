@@ -30,18 +30,23 @@ export default function NavTwo() {
     },
   ];
   return (
-    <div className='w-full bg-[#111111] texture-four sticky top-0 z-90'>
+    <div className='w-full bg-[#1A1A1A] sticky top-0 z-90 shadow-2xl shadow-black/80'>
       <div className='w-full flex items-center h-[50px] z-50 relative px-2'>
         {/* Logo - left */}
         <div className='w-[200px] text-white flex items-center gap-1'>
           <Image src='/logo-3.svg' alt='Floot' width={30} height={30} />
-          <div className='text-white text-xl font-semibold heading-serif'>floot</div>
+          <div className='text-white text-xl font-semibold heading-serif'>
+            floot
+          </div>
         </div>
 
         {/* Nav links - center */}
         <div className='flex-1 flex justify-center items-center gap-6'>
           {links.map((link) => (
-            <div key={link.index} className='text-white text-sm font-bricolage-grotesque font-light'>
+            <div
+              key={link.index}
+              className='text-white text-sm font-bricolage-grotesque font-light hover:text-zinc-300 duration-300 cursor-pointer'
+            >
               {link.label}
             </div>
           ))}

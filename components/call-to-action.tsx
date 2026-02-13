@@ -76,7 +76,7 @@ export default function CallToAction() {
           ))}
         </div>
       </div>
-      <div className='mx-auto w-full max-w-5xl'>
+      <div className='mx-auto w-full max-w-6xl'>
         {/* <CTA /> */}
         <CTATwo />
       </div>

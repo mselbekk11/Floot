@@ -3,11 +3,11 @@ import React from 'react';
 import { ProductIllustration } from '@/components/ui/illustrations/product-illustration';
 import {
   PromptInput,
-  PromptInputTextarea,
   PromptInputToolbar,
   PromptInputTools,
   PromptInputSubmit,
 } from './prompt-input';
+import { AnimatedPromptTextarea } from './animated-prompt-textarea';
 import Chatbox from './chatbox';
 import ChatboxTwo from './chatbox-two';
 import Bolt from './lottie/bolt';
@@ -45,25 +45,35 @@ export default function HeroSection() {
             <h1 className='mx-auto max-w-3xl text-balance text-4xl font-semibold sm:text-5xl text-zinc-800 heading-serif z-20 relative'>
               Build powerful apps fast. <br /> without writing code.
             </h1>
+            {/* <h1 className='mx-auto max-w-3xl text-balance text-4xl font-semibold sm:text-5xl text-zinc-800 heading-serif z-20 relative'>
+            Build your own app. <br /> No code. No developers.
+            </h1> */}
 
             <p className='text-muted-foreground mx-auto mb-7 mt-4 max-w-xl text-balance text-lg font-bricolage-grotesque font-light'>
-              Create apps and websites by chatting with AI
+            Create stunning apps & websites by chatting with AI.
             </p>
 
-            <Image
+            {/* <Image
               src='/stripe.svg'
               width={300}
               height={50}
               alt=''
               className='pointer-events-none absolute z-0 top-23 left-115'
+            /> */}
+                        <Image
+              src='/stripe.svg'
+              width={170}
+              height={50}
+              alt=''
+              className='pointer-events-none absolute z-0 top-24 left-70'
             />
 
             {/* <ProductIllustration /> */}
 
             <div className='max-w-[800px] mx-auto'>
               <div className='px-[3px] py-[3px] rounded-md bg-linear-to-r from-[#9B17F7] via-[#D13AC0] to-[#DE3AB4] shadow-md hover:shadow-2xl transition duration-300'>
-                <PromptInput>
-                  <PromptInputTextarea className='min-h-[100px]' />
+                <PromptInput className='divide-y-0'>
+                  <AnimatedPromptTextarea className='min-h-[100px]' />
                   <PromptInputToolbar>
                     <PromptInputTools />
                     <PromptInputSubmit>
