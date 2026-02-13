@@ -41,7 +41,7 @@ export default function NavTwo() {
         {/* Nav links - center */}
         <div className='flex-1 flex justify-center items-center gap-6'>
           {links.map((link) => (
-            <div key={link.index} className='text-white text-md font-bricolage-grotesque font-light'>
+            <div key={link.index} className='text-white text-sm font-bricolage-grotesque font-light'>
               {link.label}
             </div>
           ))}

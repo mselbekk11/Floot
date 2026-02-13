@@ -23,8 +23,8 @@ export default function ChatboxTwo() {
           Generate
         </Button> */}
         <Button variant='floottwo' size='lg'>
-        <Bolt mode='loop' size='w-4 h-4' className='brightness-0 invert' />
-          Generate
+          <Bolt mode='loop' size='w-4 h-4' className='brightness-0 invert' />
+          Build
         </Button>
         {/* <div className='bg-linear-to-r from-[#9B17F7] via-[#D13AC0] to-[#DE3AB4] p-[1px]'>
           <Button variant='grey' size='lg'>

@@ -11,7 +11,8 @@
       "Bash(jq:*)",
       "Bash(grep:*)",
       "Bash(npx convex env:*)",
-      "Bash(npx convex deployment list:*)"
+      "Bash(npx convex deployment list:*)",
+      "mcp__ide__getDiagnostics"
     ]
   }
 }

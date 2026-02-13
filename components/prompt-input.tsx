@@ -13,7 +13,7 @@ export type PromptInputProps = HTMLAttributes<HTMLFormElement>
 
 export const PromptInput = ({ className, ...props }: PromptInputProps) => (
     <form
-        className={cn('bg-card ring-border-illustration w-full divide-y overflow-hidden rounded-xl shadow-md ring-1', className)}
+        className={cn('bg-card ring-border-illustration w-full divide-y overflow-hidden rounded-md shadow-md', className)}
         {...props}
     />
 )
@@ -23,7 +23,7 @@ export type PromptInputTextareaProps = ComponentProps<typeof Textarea> & {
     maxHeight?: number
 }
 
-export const PromptInputTextarea = ({ onChange, className, placeholder = 'What would you like to know?', ...props }: PromptInputTextareaProps) => {
+export const PromptInputTextarea = ({ onChange, className, placeholder = 'Describe a company in a sentence or two...', ...props }: PromptInputTextareaProps) => {
     const handleKeyDown: KeyboardEventHandler<HTMLTextAreaElement> = (e) => {
         if (e.key === 'Enter') {
             // Don't submit if IME composition is in progress
@@ -47,13 +47,14 @@ export const PromptInputTextarea = ({ onChange, className, placeholder = 'What w
 
     return (
         <Textarea
-            className={cn('w-full resize-none rounded-none border-none p-3 shadow-none outline-none ring-0', 'field-sizing-content max-h-[6lh] bg-transparent dark:bg-transparent', 'focus-visible:ring-0', className)}
+            className={cn('w-full resize-none rounded-none border-none p-3 shadow-none outline-none ring-0', 'field-sizing-content max-h-[6lh] bg-transparent dark:bg-transparent', 'focus-visible:ring-0', 'text-md! font-bricolage-grotesque font-light', className)}
             name="message"
             onChange={(e) => {
                 onChange?.(e)
             }}
             onKeyDown={handleKeyDown}
             placeholder={placeholder}
+            autoFocus
             {...props}
         />
     )
@@ -97,7 +98,7 @@ export type PromptInputSubmitProps = ComponentProps<typeof Button> & {
     status?: ChatStatus
 }
 
-export const PromptInputSubmit = ({ className, variant = 'default', size = 'icon', status, children, ...props }: PromptInputSubmitProps) => {
+export const PromptInputSubmit = ({ className, variant = 'floottwo', size = 'lg', status, children, ...props }: PromptInputSubmitProps) => {
     let Icon = <SendIcon className="size-4" />
 
     if (status === 'submitted') {

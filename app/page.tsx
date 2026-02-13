@@ -8,7 +8,7 @@ import NavTwo from '@/components/nav-two';
 
 export default function Page() {
   return (
-    <>
+    <div className='relative'>
       <NavTwo />
       <HeroSection />
       <Discover />
@@ -16,6 +16,6 @@ export default function Page() {
       <BentoFive />
       <CallToAction />
       <FooterSection />
-    </>
+    </div>
   );
 }

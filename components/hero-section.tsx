@@ -10,6 +10,7 @@ import {
 } from './prompt-input';
 import Chatbox from './chatbox';
 import ChatboxTwo from './chatbox-two';
+import Bolt from './lottie/bolt';
 import Image from 'next/image';
 
 export default function HeroSection() {
@@ -60,15 +61,24 @@ export default function HeroSection() {
             {/* <ProductIllustration /> */}
 
             <div className='max-w-[800px] mx-auto'>
-              {/* <PromptInput>
-              <PromptInputTextarea className="min-h-[100px]"/>
-              <PromptInputToolbar>
-                <PromptInputTools />
-                <PromptInputSubmit />
-              </PromptInputToolbar>
-            </PromptInput> */}
+              <div className='px-[3px] py-[3px] rounded-md bg-linear-to-r from-[#9B17F7] via-[#D13AC0] to-[#DE3AB4] shadow-sm shadow-black/20 transition-shadow duration-300 hover:shadow-[80_17px_55px_-1px_rgba(0,0,0,0.1)] has-focus:shadow-[0_27px_55px_-14px_rgba(0,0,0,0.27)]'>
+                <PromptInput>
+                  <PromptInputTextarea className='min-h-[100px]' />
+                  <PromptInputToolbar>
+                    <PromptInputTools />
+                    <PromptInputSubmit>
+                      <Bolt
+                        mode='loop'
+                        size='w-4 h-4'
+                        className='brightness-0 invert'
+                      />
+                      Build
+                    </PromptInputSubmit>
+                  </PromptInputToolbar>
+                </PromptInput>
+              </div>
               {/* <Chatbox /> */}
-              <ChatboxTwo />
+              {/* <ChatboxTwo /> */}
             </div>
           </div>
         </section>
