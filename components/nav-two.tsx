@@ -15,7 +15,7 @@ const links = [
 
 export default function NavTwo() {
   return (
-    <div className='w-full bg-[#1A1A1A] sticky top-0 z-20 shadow-2xl shadow-black/80'>
+    <div className='w-full bg-[#1A1A1A] sticky top-0 z-60 shadow-2xl shadow-black/80'>
       <div className='w-full flex items-center h-[50px] z-50 relative px-2'>
         {/* Logo - left */}
         <div className='w-[200px] text-white flex items-center gap-1'>

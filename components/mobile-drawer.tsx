@@ -4,19 +4,15 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Menu } from 'lucide-react';
 import { Button } from './ui/button';
-import {
-  Drawer,
-  DrawerContent,
-  DrawerTrigger,
-  DrawerTitle,
-} from './ui/drawer';
+import { Drawer, DrawerContent, DrawerTrigger, DrawerTitle } from './ui/drawer';
+import Image from 'next/image';
 
 const links = [
-  { label: 'Pricing', href: '/pricing' },
-  { label: 'Gallery', href: '/gallery' },
-  { label: 'About', href: '/about' },
-  { label: 'faqs', href: '/faqs' },
-  { label: 'Docs', href: '/docs' },
+  { label: 'Pricing', href: '/', id: 'pricing' },
+  { label: 'Gallery', href: '/', id: 'gallery' },
+  { label: 'About', href: '/', id: 'about' },
+  { label: 'faqs', href: '/', id: 'faqs' },
+  { label: 'Docs', href: '/', id: 'docs' },
 ];
 
 export default function MobileDrawer() {
@@ -31,21 +27,35 @@ export default function MobileDrawer() {
       </DrawerTrigger>
       <DrawerContent>
         <DrawerTitle className='sr-only'>Navigation Menu</DrawerTitle>
-        <nav className='flex flex-col gap-1 p-4'>
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={() => setOpen(false)}
-              className='px-3 py-3 text-sm rounded-md hover:bg-accent'
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+        <div className=''>
+          <div className='flex flex-col h-[50px] justify-center px-4 border-b border-white/10'>
+            <div className='w-[200px] text-white flex items-center gap-1'>
+              <Image src='/logo-3.svg' alt='Floot' width={30} height={30} />
+              <div className='text-white text-xl font-semibold heading-serif'>
+                floot
+              </div>
+            </div>
+          </div>
+          <nav className='flex flex-col gap-1 px-4'>
+            {links.map((link) => (
+              <Link
+                key={link.id}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className=' py-3 text-sm text-white'
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
         <div className='flex flex-col gap-2 p-4 mt-auto'>
-          <Button variant='grey' className='w-full'>Login</Button>
-          <Button variant='floottwo' className='w-full'>Start Building</Button>
+          <Button variant='grey' className='w-full'>
+            Login
+          </Button>
+          <Button variant='floottwo' className='w-full'>
+            Start Building
+          </Button>
         </div>
       </DrawerContent>
     </Drawer>
