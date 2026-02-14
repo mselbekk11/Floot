@@ -175,8 +175,13 @@
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 @layer utilities {
@@ -208,12 +213,18 @@
     letter-spacing: -0.02em;
   }
 
+  h1 {
+    font-size: 1.6rem;
+  }
+
   h2 {
     font-size: 1.6rem;
   }
 
   p {
     font-family: var(--font-bricolage-grotesque), sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
   }
 
   .texture-four {

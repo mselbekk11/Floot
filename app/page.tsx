@@ -12,15 +12,11 @@ export default function Page() {
   return (
     <div className='relative'>
       <NavTwo />
-      {/* <div className='relative z-80'>
-      <HeaderEight />
-      </div> */}
       <HeroSection />
       <Discover />
       <FeatureBase />
       <BentoFive />
       <CallToAction />
-      {/* <FooterSection /> */}
       <FooterTwo />
     </div>
   );

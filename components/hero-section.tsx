@@ -41,32 +41,25 @@ export default function HeroSection() {
               `,
             }}
           /> */}
-          <div className='relative z-10 mx-auto max-w-5xl px-6 text-center'>
-            <h1 className='mx-auto max-w-3xl text-balance text-4xl font-semibold sm:text-5xl text-zinc-800 heading-serif z-20 relative'>
-              Build powerful apps fast. <br /> without writing code.
+          <div className='relative z-10 mx-auto max-w-5xl px-4 text-center'>
+            <h1 className='mx-auto max-w-3xl text-balance text-2xl font-semibold md:text-5xl text-zinc-800 heading-serif z-20 relative'>
+              Build powerful apps fast. <br />
+              <span className='relative inline-block'>
+                without
+                <Image
+                  src='/stripe.svg'
+                  width={170}
+                  height={50}
+                  alt=''
+                  className='pointer-events-none absolute -bottom-1 md:-bottom-2 left-0 w-full'
+                />
+              </span>{' '}
+              writing code.
             </h1>
-            {/* <h1 className='mx-auto max-w-3xl text-balance text-4xl font-semibold sm:text-5xl text-zinc-800 heading-serif z-20 relative'>
-            Build your own app. <br /> No code. No developers.
-            </h1> */}
 
-            <p className='text-muted-foreground mx-auto mb-7 mt-4 max-w-xl text-balance text-lg font-bricolage-grotesque font-light'>
+            <p className='text-muted-foreground mx-auto mb-7 mt-4 max-w-xl text-sm md:text-lg'>
             Create stunning apps & websites by chatting with AI.
             </p>
-
-            {/* <Image
-              src='/stripe.svg'
-              width={300}
-              height={50}
-              alt=''
-              className='pointer-events-none absolute z-0 top-23 left-115'
-            /> */}
-                        <Image
-              src='/stripe.svg'
-              width={170}
-              height={50}
-              alt=''
-              className='pointer-events-none absolute z-0 top-24 left-70'
-            />
 
             {/* <ProductIllustration /> */}
 
